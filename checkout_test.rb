@@ -27,3 +27,9 @@ def remove_item
   @browser.button(class: 'btn_secondary cart_button').click
 
 end
+
+setup
+login('standard_user', 'secret_sauce')
+select_item
+view_cart
+remove_item
